@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIFIED MENTOR PROJECTS</title>
+    <link rel="icon" href="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/077cfe23-3120-46a6-a368-c0a4a39cc1f7.png" type="image/png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #ffffff;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .header p {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .project-img {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .project-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-img img {
+            transform: scale(1.05);
+        }
+
+        .project-content {
+            padding: 25px;
+        }
+
+        .project-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #00d2ff;
+        }
+
+        .project-content p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .project-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.85rem;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                45deg,
+                transparent 0%,
+                rgba(0, 210, 255, 0.1) 50%,
+                transparent 100%
+            );
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-card:hover::before {
+            opacity: 1;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .projects-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .project-card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>DATA ANALYSIS PROJECTS</h1>
+        <p>UNIFIED MENTOR PROJECTS</p>
+    </div>
+
+    <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-card" onclick="window.open('https://unlocking-youtube-channel-performance.onrender.com', '_blank')">
+            <div class="project-img">
+                <img src="https://www.dexerto.com/cdn-image/wp-content/uploads/2023/05/17/how-many-views-on-youtube-to-make-money.jpg?width=1200&quality=60&format=auto" />
+            </div>
+            <div class="project-content">
+                <h3>YouTube Revenue Predictor</h3>
+                <p>This project aims to analyze YouTube channel performance by leveraging extensive metrics and using Machine Learning techniques to uncover patterns, trends, and actionable insights. We'll focus on Exploratory Data Analysis (EDA), data visualization, and developing a predictive model to estimate revenue or subscribers based on the provided dataset.</p>
+                <div class="project-meta">
+                    <span>Python • Google Colab</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" onclick="window.open('https://cybersecurity-suspicious-web-threat.onrender.com', '_blank')">
+            <div class="project-img">
+                <img src="https://cdn.nextgov.com/media/img/cd/2023/05/01/050123devicesecurityNG/860x394.jpg" />
+            </div>
+            <div class="project-content">
+                <h3>Cybersecurity Threat Detection</h3>
+                <p>In today's cloud environments, cybersecurity is more crucial than ever. The ability to detect and respond to threats in real time can protect organizations from significant consequences. This dataset provides a view of web traffic that has been labeled as suspicious, offering a valuable resource for developers, data scientists, and security experts to enhance threat detection techniques.</p>
+                <div class="project-meta">
+                    <span>Machine learning  ~  Python  ~  Google Colab</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Basic JavaScript for additional interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.project-card');
+            
+            cards.forEach(card => {
+                // Add keyboard accessibility
+                card.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter') {
+                        const link = card.getAttribute('onclick').match(/'(.*?)'/)[1];
+                        window.open(link, '_blank');
+                    }
+                });
+                
+                // Set tabindex for keyboard navigation
+                card.setAttribute('tabindex', '0');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
